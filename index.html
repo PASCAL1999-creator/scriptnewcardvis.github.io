@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/inaya_pfp.gif">
+    
+    <title>Pascal Koster • Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/quiz.js" defer></script>
+    <script src="assets/js/review.js" defer></script>
+</head>
+<body>
+    <div class="welcome-screen">
+        <div class="welcome-text">Welkom bij mijn Portfolio</div>
+    </div>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="assets/imgs/kaneki_pfp.gif" alt="Pascal Koster" class="profile-img">
+            <h1>Pascal Koster</h1>
+            <p class="title">Frontend Developer & Grafisch Ontwerper</p>
+            <div class="social-links">
+                <a href="https://github.com/PASCAL1999-creator" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pascal-koster-2016b9a2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://codepen.io/Pascal-Koster" target="_blank"><i class="fab fa-codepen"></i></a>
+                <a href="https://script.nl" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-card html">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Semantische en toegankelijke websites bouwen</p>
+            </div>
+            <div class="skill-card css">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Responsive en moderne styling</p>
+            </div>
+            <div class="skill-card js">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interactieve web applicaties</p>
+            </div>
+            <div class="skill-card design">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>Creatief grafisch ontwerp</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz header -->
+    <div class="quiz-header">
+        <i class="fas fa-gamepad game-icon"></i>
+        <h2>Groninger Kennis Quiz</h2>
+        <p>Test jouw kennis over de mooiste stad van het Noorden! Beantwoord alle vragen en ontdek hoeveel jij weet over Groningen.</p>
+    </div>
+
+    <!-- Bestaande Quiz sectie -->
+    <div class="quiz-container">
+        <h2>Test je Groninger Kennis!</h2>
+        <div id="quiz">
+            <div class="quiz-question">
+                <p id="question"></p>
+                <div class="quiz-options" id="options"></div>
+            </div>
+            <button id="submit-btn">Controleer Antwoord</button>
+            <p id="result"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <!-- Review sectie -->
+    <div class="review-container">
+        <button id="review-btn" class="review-btn">
+            <i class="fas fa-star"></i> Beoordeel deze Website
+        </button>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Beoordeel deze Website</h2>
+            <div class="stars">
+                <i class="fas fa-star" data-rating="1"></i>
+                <i class="fas fa-star" data-rating="2"></i>
+                <i class="fas fa-star" data-rating="3"></i>
+                <i class="fas fa-star" data-rating="4"></i>
+                <i class="fas fa-star" data-rating="5"></i>
+            </div>
+            <textarea id="review-text" placeholder="Schrijf hier je review..."></textarea>
+            <button id="submit-review" class="submit-review-btn">Verstuur Review</button>
+        </div>
+    </div>
+
+    <!-- Copyright sectie -->
+    <footer class="copyright">
+        <p>&copy; 2024 Pascal Koster • Developer bij Script Groningen</p>
+    </footer>
+</body>
+</html>
